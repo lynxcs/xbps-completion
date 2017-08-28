@@ -1,0 +1,8 @@
+_xbps-remove() {
+  local prefix="${COMP_WORDS[COMP_CWORD]}"
+  COMPREPLY=($(printf %s\\n $installedPackages |
+               awk -v IGNORECASE=1 -v p="$prefix" \
+                   'p==substr($0,0,length(p))'))
+}
+installedPackages="$(xbps-query -s '*' | awk '{print $2}' | sed 's/\(.*\)-.*/\1/' | awk '{print $1}' ORS=' ')"
+complete -F _xbps-remove -o filenames xbps-remove

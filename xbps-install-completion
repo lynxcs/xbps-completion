@@ -1,0 +1,8 @@
+_xbps-install() {
+  local prefix="${COMP_WORDS[COMP_CWORD]}"
+  COMPREPLY=($(printf %s\\n $availablePackages |
+               awk -v IGNORECASE=1 -v p="$prefix" \
+                   'p==substr($0,0,length(p))'))
+}
+availablePackages="$(xbps-query -Rs '*' | awk '{print $2}' | sed 's/\(.*\)-.*/\1/' | awk '{print $1}' ORS=' ')"
+complete -F _xbps-install -o filenames xbps-install

@@ -1,6 +1,4 @@
-XBPS-Completion
-===============
-Autocompletion for xbps
+Autocompletion for the xbps package manager
 -----------------------
 
 ### Installation
@@ -10,4 +8,6 @@ source /path/to/xbps-install-completion
 source /path/to/xbps-remove-completion
 ```
 
-
+### TODO
+- [ ] Improve Speed (calling xbps-query everytime isn't the best)
+- [ ] Combine both completion files into one?

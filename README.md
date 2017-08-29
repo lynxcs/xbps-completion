@@ -1,14 +1,13 @@
 XBPS-Completion
 ===============
-
 Autocompletion for xbps
 -----------------------
 
-### To install
-Add these to your .bashrc, you can use one without the other.
+### Installation
+Add these to your .bashrc
 ```
-source /path/to/xbps-install
-source /path/to/xbps-remove
+source /path/to/xbps-install-completion
+source /path/to/xbps-remove-completion
 ```
 
 

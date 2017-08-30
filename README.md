@@ -4,12 +4,12 @@ Autocompletion for the xbps package manager
 ### Installation
 ```
 git clone https://github.com/lynxcs/xbps-completion && cd xbps-completion
-./xbps-completion-update
+./xbps-completion-update.sh
 ```
-Add these to your .bashrc
+**Copy these files to /etc/bash_completionds.d (create the folder if it doesn't exit)**
 ```
-source /path/to/xbps-install-completion
-source /path/to/xbps-remove-completion
+cp /path/to/xbps-install-completion /etc/bash_completions.d/
+cp /path/to/xbps-remove-completion /etc/bash_completionds.d/
 ```
 **And occasionally run the included update script.**
 (Or alias it to xbps-install so it runs after xbps finishes)

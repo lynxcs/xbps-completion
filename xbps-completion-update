@@ -1,5 +1,0 @@
-#!/bin/bash
-echo "Updating available packages..."
-xbps-query -Rs "$*" | awk '{print $2}' | sed 's/\(.*\)-.*/\1/' | awk '{print $1}' ORS=' ' | cat > ~/.local/share/xbps-completion-available
-echo "Updating installed packages..."
-xbps-query -s '*' | awk '{print $2}' | sed 's/\(.*\)-.*/\1/' | awk '{print $1}' ORS=' ' | cat > ~/.local/share/xbps-completion-installed

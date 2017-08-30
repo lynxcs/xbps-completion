@@ -1,6 +1,7 @@
 Autocompletion for the xbps package manager
 -----------------------
-
+### Dependencies
+**Depends on bash-completion because without it, it just doesn't work!**
 ### Installation
 ```
 git clone https://github.com/lynxcs/xbps-completion && cd xbps-completion

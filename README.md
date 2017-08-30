@@ -6,7 +6,7 @@ Autocompletion for the xbps package manager
 git clone https://github.com/lynxcs/xbps-completion && cd xbps-completion
 ./xbps-completion-update.sh
 ```
-**Copy xbps-install/remove-completion to /etc/bash_completions.d (create the folder if it doesn't exit)**
+**Copy xbps-install/remove-completion to /etc/bash_completions.d (create the folder if it doesn't exist)**
 ```
 cp /path/to/xbps-install-completion /etc/bash_completions.d/
 cp /path/to/xbps-remove-completion /etc/bash_completions.d/

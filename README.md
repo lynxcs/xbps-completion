@@ -2,6 +2,13 @@ Autocompletion for the xbps package manager
 -----------------------
 ### Dependencies
 **Depends on bash-completion because without it, it just doesn't work!**
+*if you **can't** use bash-completion then you can just source them in your .bashrc:
+```
+source /path/to/xbps-install-completion
+source /path/to/xbps-remove-completion
+```
+***One downsize is that it doesn't work with sudo (Unless you maybe change something in .bashrc)***
+
 ### Installation
 ```
 git clone https://github.com/lynxcs/xbps-completion && cd xbps-completion

@@ -7,7 +7,7 @@ Autocompletion for the xbps package manager
 source /path/to/xbps-install-completion
 source /path/to/xbps-remove-completion
 ```
-***One downsize is that it doesn't work with sudo (Unless you maybe change something in .bashrc)***
+***One downside is that it doesn't work with sudo (Unless you maybe change something in .bashrc)***
 
 ### Installation
 ```
